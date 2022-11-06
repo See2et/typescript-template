@@ -4,7 +4,7 @@ require("esbuild")
   .build({
     define: { "process.env.NODE_ENV": process.env.NODE_ENV },
     entryPoints: [resolve(__dirname, "src/index.ts")],
-    target: "esnext",
+    target: "node18",
     outfile: resolve(__dirname, "dist/index.js"),
     bundle: true,
     minify: true,
